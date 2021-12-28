@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/personal-dashboard/static/css/main.dfdb6c3f.chunk.css",
-    "main.js": "/personal-dashboard/static/js/main.0b51de02.chunk.js",
-    "main.js.map": "/personal-dashboard/static/js/main.0b51de02.chunk.js.map",
+    "main.css": "/personal-dashboard/static/css/main.1f4b02c5.chunk.css",
+    "main.js": "/personal-dashboard/static/js/main.588f7f1a.chunk.js",
+    "main.js.map": "/personal-dashboard/static/js/main.588f7f1a.chunk.js.map",
     "runtime-main.js": "/personal-dashboard/static/js/runtime-main.05c59c0c.js",
     "runtime-main.js.map": "/personal-dashboard/static/js/runtime-main.05c59c0c.js.map",
     "static/css/2.04346a5b.chunk.css": "/personal-dashboard/static/css/2.04346a5b.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.1d4c118b.chunk.js.map": "/personal-dashboard/static/js/2.1d4c118b.chunk.js.map",
     "index.html": "/personal-dashboard/index.html",
     "static/css/2.04346a5b.chunk.css.map": "/personal-dashboard/static/css/2.04346a5b.chunk.css.map",
-    "static/css/main.dfdb6c3f.chunk.css.map": "/personal-dashboard/static/css/main.dfdb6c3f.chunk.css.map",
+    "static/css/main.1f4b02c5.chunk.css.map": "/personal-dashboard/static/css/main.1f4b02c5.chunk.css.map",
     "static/js/2.1d4c118b.chunk.js.LICENSE.txt": "/personal-dashboard/static/js/2.1d4c118b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.05c59c0c.js",
     "static/css/2.04346a5b.chunk.css",
     "static/js/2.1d4c118b.chunk.js",
-    "static/css/main.dfdb6c3f.chunk.css",
-    "static/js/main.0b51de02.chunk.js"
+    "static/css/main.1f4b02c5.chunk.css",
+    "static/js/main.588f7f1a.chunk.js"
   ]
 }

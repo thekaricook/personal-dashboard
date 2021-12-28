@@ -1,12 +1,17 @@
-export const WeatherDay = ({ min, max, weatherType, weatherKey }) => {
+export const WeatherDay = ({ date, max, min, weatherType, weatherKey }) => {
     return(
         <div>
-            <img 
+            <div className="weather-date">{date}</div>
+            <div className="weather-img">
+                <img 
                 alt={weatherType}
                 src={`https://developer.accuweather.com/sites/default/files/${weatherKey}-s.png`}
-            />
-            <div>{weatherType}</div>
-            <div>Min: {min} |  Max: {max}</div>
+                className="weather-icon"
+                />
+            </div>
+            
+            <div className="weather-max">{max}&deg;</div><div className="weather-min">&nbsp;/&nbsp;{min}&deg;</div>
+            <div className="weather-type">{weatherType}</div>
         </div>
     );
 };

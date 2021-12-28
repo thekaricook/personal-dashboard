@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   background-color: #e9e9f4;
 }
 
@@ -18,6 +18,10 @@
 
 .flex-container {
   display: flex;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
 
 .nav-title {
@@ -36,14 +40,16 @@
 }
 
 .overview-container {
-  width: 65%;
-  padding: 0rem 2rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  width: 85%;
+  height: 82vh;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255);
   border-radius: 30px;
 }
 .calendar-content {
-  width: 35%;
-  padding: 2rem 3rem 1rem 3rem;
+  width: 90%;
+  padding: 2rem 2rem 1rem 2rem;
+  border-left: 2px solid #e9e9f4;
 }
 /*
 .calendar-content {
@@ -54,11 +60,18 @@
 }
 */
 
+.tasklist-container {
+  margin-right: 2rem;
+}
+
+.tasklist-content {
+  grid-template-columns: 60%;
+}
 .weather-content {
   padding: 20px;
 }
 
-.tasklist-content {
+.tasklist-content, .weather-container {
   padding: 20px;
 }
 
@@ -100,27 +113,47 @@
 .current-time {
   font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 /* Calendar */
 .this-month {
   font-size: 1.25rem;
   font-weight: 600;
+  margin-top: 2rem;
 }
 
 /* Weather */
 .main-weather {
-  display: flex;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .weather-day {
   margin: 10px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   justify-content: center;
+}
+
+.weather-icon {
+  width: 80%;
+}
+.weather-type {
+  font-size: 12px;
+}
+.weather-date {
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+.weather-max {
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+.weather-min {
+  font-size: 12px;
+  display: inline-block;
 }
 
 
@@ -138,13 +171,13 @@
 
 .todo-input, .todo-button {
   padding: 0.2rem;
+  border: 1px solid #c0bcd8;
   font-size: 1rem;
-  border: none;
   background: white;
 }
 .todo-button {
-  color: #82799c;
-  background: #ffffff;
+  color: #ffffff;
+  background: #c0bcd8;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -159,15 +192,12 @@
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 100%;
   list-style: none;
   padding-left: 0;
   margin-top: 0;
 }
 
-.todo-form {
-  display: flex;
-}
 
 .todo {
   margin: 0.5rem;
@@ -184,6 +214,8 @@
   padding-left: 10px;
   font-size: 1rem;
   width: 100%;
+  background-color: #e9e9f4;
+  color: #82799c;
 }
 .todo li {
   flex: 1;
@@ -256,10 +288,10 @@ select {
   position: absolute;
   right: 3px;
   padding: .2rem;
-  background: #ffffff;
+  background: #e9e9f4;
   cursor: pointer;
   pointer-events: none;
-  color: #c0bcd8;
+  color: #82799c;
 }
 /* Transition */
 /*
@@ -267,4 +299,19 @@ select {
   transform: scale(1.5);
 }
 */
+@media (max-width: 1000px) {
+  .main-weather { grid-template-columns: repeat(3, 1fr); }
+}
 
+@media (max-width: 768px) {
+  .grid { 
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  .overview-container {
+    height: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-weather { grid-template-columns: repeat(2, 1fr); }
+}

@@ -51,10 +51,6 @@ const Tasklist = () => {
     return (
         <div className="tasklist-content">
                     <h2>To Do:</h2>
-                <div className="list">
-                    <TodoList todos={todos} setTodos={setTodos} filteredTodos={filteredTodos} />
-                </div>
-
                 <div className="add-new-task">
                     <TaskForm 
                         todos={todos} 
@@ -63,6 +59,10 @@ const Tasklist = () => {
                         inputText={inputText}
                         setStatus={setStatus} 
                     />
+                </div>
+
+                <div className="list">
+                    <TodoList todos={todos} setTodos={setTodos} filteredTodos={filteredTodos} />
                 </div>
         </div>
     )

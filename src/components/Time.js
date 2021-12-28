@@ -8,9 +8,9 @@ export default class Time extends React.Component {
       return(
         <div className="current-time">
           <Clock
-            format={'H:mm'}
+            format={'h:mm a'}
             ticking={true}
-            timezone={'US/Pacific'} 
+            timezone={'US/Mountain'} 
           />
         </div>
       )

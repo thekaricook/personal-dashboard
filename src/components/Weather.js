@@ -19,6 +19,7 @@ const Weather = () => {
     }
   };
 
+
   useEffect(() => {
     fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/locationKey=${locationKey}?apikey=${apiKey}`)
     .then(res => res.json())
@@ -27,6 +28,7 @@ const Weather = () => {
       setWeatherInfo(res.DailyForecasts
         .map(df => {
           return {
+            date: df.Date.substring(10, 5),
             min: df.Temperature.Minimum.Value,
             max: df.Temperature.Maximum.Value,
             weatherType: df.Day.IconPhrase,
@@ -41,6 +43,7 @@ const Weather = () => {
       {!!weatherInfo && weatherInfo.map((i, index) => (
         <div className="weather-day" key={index}>
           <WeatherDay 
+            date={i.date}
             min={i.min} 
             max={i.max} 
             weatherType={i.weatherType} 

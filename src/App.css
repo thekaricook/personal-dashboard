@@ -139,12 +139,15 @@
 .weather-icon {
   width: 80%;
 }
+.weather-img {
+  margin-top: 10px;
+}
 .weather-type {
-  font-size: 12px;
+  font-size: 10px;
+  line-height: 1.3;
 }
 .weather-date {
   font-size: 12px;
-  padding-bottom: 5px;
 }
 .weather-max {
   font-size: 20px;
@@ -309,6 +312,9 @@ select {
   }
   .overview-container {
     height: 90%;
+  }
+  .calendar-content {
+    border-left: none;
   }
 }
 

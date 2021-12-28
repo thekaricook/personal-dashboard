@@ -10,7 +10,8 @@ export const WeatherDay = ({ date, max, min, weatherType, weatherKey }) => {
                 />
             </div>
             
-            <div className="weather-max">{max}&deg;</div><div className="weather-min">&nbsp;/&nbsp;{min}&deg;</div>
+            <div className="weather-max">{max}&deg;</div>
+            <div className="weather-min">&nbsp;/&nbsp;{min}&deg;</div>
             <div className="weather-type">{weatherType}</div>
         </div>
     );

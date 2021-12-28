@@ -88,6 +88,7 @@
 
 .sidebar-icon {
   padding: 12px 0px;
+  color: #c0bcd8;
 }
 .sidebar-icon:hover {
   transform: scale(1.2);
@@ -303,7 +304,13 @@ select {
 }
 */
 @media (max-width: 1000px) {
-  .main-weather { grid-template-columns: repeat(3, 1fr); }
+  .main-weather { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .overview-container {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -312,12 +319,36 @@ select {
   }
   .overview-container {
     height: 90%;
+    padding: 1rem;
+    width: auto;
   }
   .calendar-content {
     border-left: none;
   }
 }
 
-@media (max-width: 600px) {
-  .main-weather { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 415px) {
+  .app-content { 
+    display: contents; 
+  }
+  .nav-content {
+    display: inline;
+    text-align: center;
+    height: 1rem;
+    border-radius: 15px;
+    margin: 5px 30px;
+  }
+  .sidebar-icon {
+    padding: 15px;
+  }
+  .tasklist-container {
+    margin-right: 0;
+  }
+  .calendar-content {
+    padding: .5rem;
+    width: 100%;
+  }
+  .overview-container {
+    margin: 5px;
+  }
 }

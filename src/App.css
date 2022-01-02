@@ -323,7 +323,7 @@ select {
   .overview-container {
     height: 90%;
     padding: 1rem;
-    width: auto;
+    width: 85%;
   }
   .calendar-content {
     border-left: none;
